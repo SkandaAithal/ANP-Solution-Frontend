@@ -1,0 +1,24 @@
+{
+  "name": "anp-solution",
+  "version": "1.0.0",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "sweetalert2": "^11.7.32"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "parcel": "^2.10.0"
+  },
+  "main": "index.js",
+  "description": ""
+}

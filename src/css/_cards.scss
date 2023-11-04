@@ -1,0 +1,61 @@
+@import "./fonts";
+@import "./variables";
+@import "./mediaqueries";
+@import "./mixins";
+
+#header {
+  @include headings();
+}
+#card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 191, 0, 0.486);
+}
+.card-title {
+  font-family: $font_inter_bold;
+  font-size: $small_heading_font_size;
+}
+.card-image {
+  height: 12rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s;
+    border-radius: 8px;
+  }
+}
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
+#card:hover img {
+  scale: 1.3;
+}
+#card:hover .card-hover {
+  height: 80%;
+}
+#card:hover .card-body {
+  color: $light;
+}
+#card:hover .card-title {
+  color: $warning;
+}
+.card-hover {
+  width: 150%;
+  height: 0%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: $dark;
+  z-index: 0;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transition: height 0.4s;
+}

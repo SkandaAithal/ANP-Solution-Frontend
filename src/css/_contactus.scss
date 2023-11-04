@@ -1,0 +1,64 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+@import "./carousel";
+@import "./mediaqueries";
+
+.contact-us {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/contact-us.jpg");
+  @include backgroundsvg();
+  display: grid;
+  place-content: center;
+
+  .title {
+    display: inline-block;
+    width: max-content;
+  }
+  // ! buttons styles in contact us
+
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+
+    a {
+      color: white;
+      padding: 0.75rem;
+      border-radius: 1rem;
+      flex: 1;
+      text-decoration: none;
+    }
+    a:first-child {
+      background-color: #25d366;
+    }
+    a:first-child:active {
+      background-color: #25d36591;
+    }
+    a:last-child {
+      background-color: black;
+    }
+    a:last-child:active {
+      background-color: rgba(0, 0, 0, 0.703);
+    }
+  }
+}
+
+// ! form styles
+::placeholder {
+  color: black !important;
+}
+#contact-form {
+  color: white;
+
+  .form-title {
+    @include headings();
+  }
+}
+.bi-envelope-at-fill,
+.bi-person-fill {
+  color: black;
+}

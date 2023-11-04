@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANP Solution</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="./css/main.scss" />
+
+</head>
+
+<body class="bg-light">
+  <!-- ! navbar -->
+  <nav class="navbar navbar-expand-md bg-dark p-1 px-4 navbar-dark  " id="navbar">
+    <div class="container-xxl">
+      <a href="index.html" class="navbar-brand text-uppercase text-light fw-bolder"><img
+          src="./assets/images/ANP-logo.png" class="logo" alt=""></a>
+
+      <!--^ toggle btn for mobile nav -->
+      <button id="hamburger" class="navbar-toggler bg-warning border-0 shadow-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--^ navbar links -->
+
+      <div class="offcanvas offcanvas-start bg-primary " tabindex="-1" id="main-nav" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header p-4">
+          <h5 class="offcanvas-title" id="offcanvasLabel"><img class="logo" src="./assets/images/ANP-logo.png" alt="">
+          </h5>
+          <button type="button" id="close-nav" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+
+
+        <!--^ Offcanvas -->
+        <div class="offcanvas-body">
+
+
+          <div class="navbar-collapse justify-content-end align-items-center text-center" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item m-2">
+                <a class="nav-link text-light" id="navbar-text" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link text-light" id="navbar-text" href="./aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item m-2 d-md-block d-none">
+                <a class="nav-link text-light " id="navbar-text" href="#services">Services</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link text-light" id="navbar-text" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- ! Carousel and landing page -->
+  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!--^ Pagination -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+
+    <!-- ^ Carousel items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img src="./assets/images/carousel/carousel-1.jpg" class="d-block w-100 img-fluid " alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">ANP Solution</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Your key to a better home.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-2.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">Civil Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Your Civil Work Partner, Your Peace of Mind.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-3.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">Painting Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Creating More Than Just Painted Walls.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-4.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">Glass Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Glasswork Redefined, for Your Unique Spaces.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-5.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">Plumbing Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Plumbing Solutions for a Leak-Proof Life.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-6.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">Electric Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Your Electrical Needs, Our Expertise.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/carousel/carousel-7.jpg" class="d-block w-100 img-fluid image-dark" alt="..."
+          id="imagecarousel" />
+        <div class="carousel-caption ">
+          <div>
+            <h5 id="slide-title">POP Work</h5>
+          </div>
+          <p class="animate__animated animate__zoomIn animate__slow">Your Space, Our POP Masterpiece.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--^ buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--! Card section -->
+
+  <section id="services" class="px-4 pt-4 border-0  p-md-0 mt-2 mt-md-5">
+
+    <main class="container-md text-center  ">
+      <div class="pt-3">
+        <h1 id="header">Services</h1>
+        <p class="mt-3 display-6">Dedicated to Service, Devoted to You.</p>
+      </div>
+
+      <!--^ cards -->
+      <div class="cards row mt-5 justify-content-center align-items-center gap-3">
+
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3 p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-1.jpg" class="card-img-top img-fluid"
+              alt="..."></div>
+
+          <div class="card-body">
+            <h1 class="card-title">Civil Work</h1>
+            <p class="card-text lead">We professionalize civil work with expertise, excellence, and integrity.</p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3 p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-2.jpg" class="card-img-top img-fluid"
+              alt="..."></div>
+          <div class="card-body">
+            <h1 class="card-title ">Painting Work</h1>
+            <p class="card-text lead">Our service excels in paint work with precision, quality, and creativity.</p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3  p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-3.jpg" class="card-img-top img-fluid"
+              alt="..."></div>
+          <div class="card-body">
+            <h1 class="card-title">Glass Work</h1>
+            <p class="card-text lead">We add beauty & functionality, letting in light & making buildings look better.
+            </p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3 p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-4.jpg" class="card-img-top img-fluid "
+              alt="..."></div>
+          <div class="card-body">
+            <h1 class="card-title">Plumbing Work</h1>
+            <p class="card-text lead">Guaranteeing Efficient Water Management for Homes & Businesses, Inside & Out.</p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3 p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-5.jpg" class="card-img-top img-fluid "
+              alt="..."></div>
+          <div class="card-body">
+            <h1 class="card-title">Electric Work</h1>
+            <p class="card-text lead">Our service electrifies your home, ensuring safety, comfort, and efficiency.</p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+        <div class="card col-12 col-sm-9 col-md-5 col-xl-3 p-2" id="card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-image"><img src="./assets/images/cards-img/card-6.jpg" class="card-img-top  img-fluid"
+              alt="..."></div>
+          <div class="card-body">
+            <h1 class="card-title">POP Work</h1>
+            <p class="card-text lead">Craftsmanship meets imagination: We shape your visions through POP artistry</p>
+          </div>
+          <div class="card-hover"></div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--!contacts -->
+  <footer class="footer p-x-4 p-sm-4 mt-sm-5 mt-4">
+
+    <div class="container-lg text-center">
+
+      <div class="text-center ">
+        <h1 class="text-uppercase heading">contacts</h1>
+      </div>
+
+      <div class="text-center footer-body my-sm-4">
+        <div class="wraper1 ">
+          <span class="contact-title">Name :</span>
+          <span class="contact-title">Phone :</span>
+          <span class="contact-title">Business Whatsapp :</span>
+
+        </div>
+        <div class="wraper2">
+
+          <span class="contact-info">Jagadish M</span>
+          <span class="contact-info">+91 8792913090</span>
+          <a href="https://wa.me/918088986350/?text=Welcome to ANP solution"
+            class="contact-info animate__animated animate__shakeX  "> <i class="bi bi-whatsapp"></i> Click Me</a>
+        </div>
+  </footer>
+
+  <script type="module" src="./js/aos.js"></script>
+  <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

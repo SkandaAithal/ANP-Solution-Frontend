@@ -1,0 +1,49 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixins";
+
+.footer {
+  @include backgroundsvg();
+  background-image: url("../assets/layered-peaks-haikei.svg");
+}
+.heading {
+  @include headings();
+}
+
+// ^ Contact info
+.footer-body {
+  display: flex;
+  justify-content: center;
+
+  .wraper1 {
+    @include flex(column);
+
+    .contact-title {
+      margin-right: 1rem;
+      text-align: right;
+      font-family: $font_inter_bold;
+    }
+  }
+
+  .wraper2 {
+    @include flex(column);
+
+    .contact-info {
+      text-align: left;
+      font-family: $font_inter_regular;
+    }
+
+    // ^ Whatsapp click me button
+    .contact-info:last-child {
+      background-color: #25d366;
+      color: white;
+      border-radius: 1rem;
+      padding: 5px 10px;
+      width: fit-content;
+      text-decoration: none;
+    }
+    .contact-info:last-child:active {
+      background-color: #25d36591;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "./fonts";
+@import "./variables";
+#carouselExampleCaptions {
+  height: 100vh;
+}
+#imagecarousel {
+  object-fit: cover;
+  height: 100vh;
+}
+.image-dark {
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 35vh;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+
+  div {
+    display: inline-block;
+  }
+}
+
+// ! slide title style is used as standard heading for many headings in different pages
+
+#slide-title {
+  font-size: $heading_font_size;
+  font-family: $font_tilt_neon;
+  border-right: 5px solid;
+  color: #ffffff;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s, cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}

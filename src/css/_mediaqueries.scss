@@ -1,0 +1,63 @@
+@media screen and (min-width: 769px) {
+  #card {
+    height: 25rem;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+    width: 16rem;
+  }
+  .contact-info {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .contact-title {
+    font-size: 1rem;
+    width: 14rem;
+  }
+  .contact-info {
+    width: 14rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-title {
+    font-size: 0.75rem;
+    width: 8rem;
+  }
+  .contact-info {
+    width: 8rem;
+    font-size: 0.75rem;
+  }
+  .contact-btn {
+    a {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// ! about us page girl image animation media queries
+
+@media screen and (max-width: 820px) and (min-width: 530px) {
+  .animate-img {
+    left: 30vw;
+    transform: translateY(-4.25rem);
+    scale: 2;
+  }
+}
+@media screen and (max-width: 530px) and (min-width: 450px) {
+  .animate-img {
+    left: 25vw;
+    transform: translateY(-4.25rem);
+    scale: 2;
+  }
+}
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .animate-img {
+    left: 30vw;
+    transform: translateY(-4.25rem);
+    scale: 2.2;
+  }
+}
